@@ -67,9 +67,7 @@ poly_area <- function(points, IDs, buffer_size, polygons, categories,
 
   # Drop Spatial Units
   calculatedValues <- dplyr::mutate_all(areaSpread, dplyr::funs(units::drop_units))
-
-  # Join Values with original points object
-  return(points)
+  return(calculatedValues)
 
 
 

@@ -60,7 +60,5 @@ line_length <- function(points, IDs, buffer_size, lines, categories,
 
   # Drop Spatial Units
   calculatedValues <- dplyr::mutate_all(lengthSpread, dplyr::funs(units::drop_units))
-
-  # Join Values with original points object
   return(calculatedValues)
 }
