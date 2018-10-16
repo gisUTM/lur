@@ -7,3 +7,7 @@ the variation in concentrations. The statistical model that defines this
 relationship is often a linear regression model, but other regression techniques
 area common. 
 
+The process can be broken into XXX major steps that include:
+
+1. Collection of air pollution data
+2. 
