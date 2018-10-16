@@ -1,4 +1,4 @@
-#' Calculate polygon area by category within buffers of pointss
+#' Calculate polygon area by category within buffers of points
 #'
 #' For a set of points, buffer each point and calculate the amount of area by land use category
 #'
