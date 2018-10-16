@@ -8,9 +8,11 @@
 #' @param polygons Spatial polygons object, which contains land use classes
 #' @param categories Land use classes in the spatial polygon object
 #' @param standardize Row Standardize area calculations to proportions instead of area
+#' @param shorten_names
 #'
 #' @export
-poly_area <- function(points, IDs, bufferSize, polygons, categories, standardize = FALSE){
+poly_area <- function(points, IDs, bufferSize, polygons, categories,
+                      standardize = FALSE, shorten_names = TRUE){
 
   # Check all ID values are unique
   if(any(base::duplicated(points[,IDs])) == TRUE){
@@ -49,8 +51,13 @@ poly_area <- function(points, IDs, bufferSize, polygons, categories, standardize
   areaSpread[is.na(areaSpread)] <- 0
 
   # Update Column Names to Include Buffer Size
-  colnames(areaSpread)[-1] <- paste(stringr::word(colnames(areaSpread)[-1],1),
-                                    bufferSize, sep = "_")
+  if(shorten_names == TRUE){
+    colnames(areaSpread)[-1] <- paste(stringr::word(colnames(areaSpread)[-1],1),
+                                        buffer_size, sep = "_")
+  }else{
+    colnames(areaSpread)[-1] <- paste(colnames(areaSpread)[-1],buffer_size, 
+                                        sep = "_")
+  }
 
   # Row Standardize value to 0 - 1, only useful for polygons
   if(standardize == TRUE){
