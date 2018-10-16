@@ -4,14 +4,14 @@
 #'
 #' @param points Spatial points object
 #' @param IDs Unique ID field in points
-#' @param bufferSize Radius used to buffer points.
+#' @param buffer_size Radius used to buffer points.
 #' @param polygons Spatial polygons object, which contains land use classes
 #' @param categories Land use classes in the spatial polygon object
 #' @param standardize Row Standardize area calculations to proportions instead of area
 #' @param shorten_names
 #'
 #' @export
-poly_area <- function(points, IDs, bufferSize, polygons, categories,
+poly_area <- function(points, IDs, buffer_size, polygons, categories,
                       standardize = FALSE, shorten_names = TRUE){
 
   # Check all ID values are unique
@@ -29,7 +29,7 @@ poly_area <- function(points, IDs, bufferSize, polygons, categories,
   # }
 
   # Buffer Points
-  bufferPoints <- sf::st_buffer(points_sf, dist = bufferSize)
+  bufferPoints <- sf::st_buffer(points_sf, dist = buffer_size)
 
   # Intersect buffered points and land use
   intersectionPolysPoints <- sf::st_intersection(bufferPoints, polygons)
