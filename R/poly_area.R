@@ -29,7 +29,7 @@ poly_area <- function(points, IDs, buffer_size, polygons, categories,
   # }
 
   # Buffer Points
-  bufferPoints <- sf::st_buffer(points_sf, dist = buffer_size)
+  bufferPoints <- sf::st_buffer(points, dist = buffer_size)
 
   # Intersect buffered points and land use
   intersectionPolysPoints <- sf::st_intersection(bufferPoints, polygons)
