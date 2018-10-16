@@ -23,7 +23,7 @@ poly_area <- function(points, IDs, buffer_size, polygons, categories,
     stop("The projections do not match")
   }
 
-  # Check for ring self-intersection in polygons
+    # Check for ring self-intersection in polygons
   # if(FALSE %in% sf::st_is_valid(polygons) ){
   #   stop("Ring Self-Intersection")
   # }
