@@ -1,7 +1,7 @@
 Package: lur
 Type: Package
 Title: Land use regression package.
-Version: 0.1.0
+Version: 0.0.0.9000
 Author: Matthew Adams
 Maintainer: Matthew Adams <md.adams@utoronto.ca>
 Description: Functions for land use regression modelling.
