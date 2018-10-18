@@ -9,5 +9,7 @@ area common.
 
 The process can be broken into XXX major steps that include:
 
-1. Collection of air pollution data
-2. 
+1. Collection of air pollution observations.
+2. Identify surronding land use conditions within buffers of the air pollution
+  observations.
+3. 
