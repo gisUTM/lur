@@ -12,4 +12,9 @@ The process can be broken into XXX major steps that include:
 1. Collection of air pollution observations.
 2. Identify surronding land use conditions within buffers of the air pollution
   observations.
-3. 
+3. Fit a statisitcal model to explain the variation in air pollution 
+  observations based on the land use conditions. Tradionally this has been a
+  linear regresion model.
+4. Cross-validation including spatial and/or temporal blocking
+5. Produce a an air pollution surface.
+    
