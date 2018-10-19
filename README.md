@@ -7,7 +7,7 @@ the variation in concentrations. The statistical model that defines this
 relationship is often a linear regression model, but other regression techniques
 area common. 
 
-The process can be broken into XXX major steps that include:
+The process can be broken into five major steps that include:
 
 1. Collection of air pollution observations.
 2. Identify surronding land use conditions within buffers of the air pollution
@@ -17,4 +17,6 @@ The process can be broken into XXX major steps that include:
   linear regresion model.
 4. Cross-validation including spatial and/or temporal blocking
 5. Produce a an air pollution surface.
+
+
     
