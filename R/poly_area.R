@@ -8,7 +8,8 @@
 #' @param polygons Spatial polygons object, which contains land use classes
 #' @param categories Land use classes in the spatial polygon object
 #' @param standardize Row Standardize area calculations to proportions instead of area
-#' @param shorten_names
+#' @param shorten_names When TRUE will shorten land use class names in the output
+#' to the first word.
 #'
 #' @export
 poly_area <- function(points, IDs, buffer_size, polygons, categories,
