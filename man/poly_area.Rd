@@ -2,23 +2,26 @@
 % Please edit documentation in R/poly_area.R
 \name{poly_area}
 \alias{poly_area}
-\title{Calculate polygon area by category within buffers of pointss}
+\title{Calculate polygon area by category within buffers of points}
 \usage{
-poly_area(points, IDs, bufferSize, polygons, categories,
-  standardize = FALSE)
+poly_area(points, IDs, buffer_size, polygons, categories,
+  standardize = FALSE, shorten_names = TRUE)
 }
 \arguments{
 \item{points}{Spatial points object}
 
 \item{IDs}{Unique ID field in points}
 
-\item{bufferSize}{Radius used to buffer points.}
+\item{buffer_size}{Radius used to buffer points.}
 
 \item{polygons}{Spatial polygons object, which contains land use classes}
 
 \item{categories}{Land use classes in the spatial polygon object}
 
 \item{standardize}{Row Standardize area calculations to proportions instead of area}
+
+\item{shorten_names}{When TRUE will shorten land use class names in the output
+to the first word.}
 }
 \description{
 For a set of points, buffer each point and calculate the amount of area by land use category
