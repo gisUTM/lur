@@ -9,9 +9,9 @@
 #' @param ID Unique ID field of the locations field
 #' @param num_sites The number of sites that will be selected.
 #' 
-#' @export
+#' 
 
 site_selection <- function(locations, ID, num_sites){
-  # Get teh land use fields
+  # Get the land use fields
   
 }
