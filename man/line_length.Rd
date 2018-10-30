@@ -4,18 +4,21 @@
 \alias{line_length}
 \title{Calculate line length by category within buffers of points}
 \usage{
-line_length(points, IDs, bufferSize, lines, categories)
+line_length(points, IDs, buffer_size, lines, categories,
+  shorten_names = TRUE)
 }
 \arguments{
 \item{points}{Spatial points object}
 
 \item{IDs}{Unique ID field in points}
 
-\item{bufferSize}{Radius used to buffer points.}
+\item{buffer_size}{Radius used to buffer points.}
 
 \item{lines}{Spatial lines object, which contains road classes}
 
 \item{categories}{Road types in the spatial line object}
+
+\item{shorten_names}{}
 }
 \description{
 For a set of points, buffer each point and calculate the total length of
